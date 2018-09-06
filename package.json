@@ -1,15 +1,14 @@
 {
-  "name": "unicorn-ffmpeg",
+  "name": "rhino-ffmpeg",
   "version": "1.0.0",
   "description": "Fake FFMPEG binary to extract arguments",
-  "bin": "app.js",
+  "bin": "src/main.js",
   "scripts": {
     "start": "pkg . -o \"bin/Plex Transcoder\""
   },
-  "author": "Maxime BACONNAIS",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "redis": "^2.7.1"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "pkg": "4.2.2"
@@ -17,9 +16,9 @@
   "pkg": {
     "targets": [
       "freebsd",
-	  "linux",
-	  "macos",
-	  "win"
+      "linux",
+      "macos",
+      "win"
     ]
   }
 }

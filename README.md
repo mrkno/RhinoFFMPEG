@@ -1,21 +1,16 @@
-## UnicornFFMPEG
+## RhinoFFMPEG
 
-This software is a part of __UnicornTranscoder__ project, it's a binary to replace the official __Plex Transcoder__, the binary will save parameters in your Redis database, the data will be used by __UnicornTranscoder__.
+An FFMpeg intercepter for Plex which will handoff transcoding to a [RhinoTranscoder](https://github.com/mrkno/RhinoTranscoder).
 
-## UnicornTranscoder Project
-
-* [UnicornTranscoder](https://github.com/UnicornTranscoder/UnicornTranscoder)
-* [UnicornLoadBalancer](https://github.com/UnicornTranscoder/UnicornLoadBalancer)
-* [UnicornFFMPEG](https://github.com/UnicornTranscoder/UnicornFFMPEG)
+This is a heavily modified version of __UnicornTranscoder__, aimed at being a more scalable and easily deployable solution.
 
 ## Dependencies
-* Redis Server
+* NodeJS with `yarn` or `npm`
 * Plex Media Server
 
 ## Installation
 * Clone this repository
-* Run `npm i`
-* Set your Redis configuration in `config.js`, and change Plex paths if it's necessary
-  * __Note:__ The redis configuration should be the same as the one of UnicornTranscoder
-* Build the binary with `npm start`
-* Replace the Plex binary called `Plex Transcoder` by the generated binary store in `bin`, choose the correct version (depend of your OS)
+* Run `yarn` or `npm install`
+* Set your configuration in `config.json`. See `config.example.json` for options.
+* Build the binary with `yarn start` or `npm start`.
+* Replace the Plex binary called `Plex Transcoder` with the generated binary from the `bin` folder
