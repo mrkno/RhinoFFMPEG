@@ -51,12 +51,12 @@ const config = loadConfig();
             method: 'POST',
             json: {
                 args: finalArgs,
-                env: env
+                env
             }
         });
     }
     catch (e) {
-        console.error(err);
+        console.error(e);
         process.exit(1);
     }
 })();
