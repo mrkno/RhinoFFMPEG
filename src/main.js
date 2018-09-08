@@ -57,6 +57,7 @@ const config = loadConfig();
     }
     catch (e) {
         console.error(e);
+        console.error(e.stack);
         process.exit(1);
     }
 })();
