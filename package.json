@@ -11,14 +11,6 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "pkg": "4.2.2"
-  },
-  "pkg": {
-    "targets": [
-      "freebsd",
-      "linux",
-      "macos",
-      "win"
-    ]
+    "pkg": "^4.3.4"
   }
 }
