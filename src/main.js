@@ -1,3 +1,4 @@
+const url = require('url');
 const util = require('util');
 const request = require('request');
 const loadConfig = require('./config');
@@ -47,7 +48,7 @@ const config = loadConfig();
         }
 
         await requestp({
-            uri: `${config.plex.url}/rhino/new/${properSessionId}`,
+            uri: url.resolve(config.plex.url, `/rhino/new/${properSessionId}`),
             method: 'POST',
             json: {
                 args: finalArgs,
